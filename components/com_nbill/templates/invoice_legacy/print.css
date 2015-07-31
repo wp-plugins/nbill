@@ -1,0 +1,71 @@
+body
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+td, p
+{
+	font-size: 10pt;
+	text-align: left;
+}
+.main
+{
+    margin-left:auto;
+    margin-right:auto;
+    border:solid 1px #ffffff; /* Without this, the PDF renderer only displays the first div and ignores any repeats */
+    margin-top:30px;
+}
+table
+{
+    border-collapse: collapse; /* This does not work with the PDF renderer, so we also have to apply borders manually */
+}
+.nbill-invoice-table td, .nbill-invoice-table th
+{
+    border: solid 1px #aaaaaa;
+    border-bottom: none;
+    border-left: none;
+}
+.border.bottom
+{
+    border-bottom: solid 1px #aaaaaa;
+}
+.border.left
+{
+    border-left: solid 1px #aaaaaa;
+}
+th
+{
+	font-size: 10pt;
+	background-color: #dedede;
+}
+.field-title, .total
+{
+	font-weight: bold;
+}
+.numeric
+{
+	text-align: right;
+}
+.grand-total
+{
+	font-size: 13pt;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.vendor
+{
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: #000099;
+	text-align: center;
+}
+.small-print
+{
+	font-size: 8pt;
+}
+.remittance
+{
+	border: solid 1px #cccccc;
+}
+.payment-link
+{
+	display: none !important;
+}

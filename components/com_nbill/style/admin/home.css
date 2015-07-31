@@ -1,0 +1,30 @@
+.nbill-help-link
+{
+    float:right;
+}
+.nbill-help-link a
+{
+    text-decoration:none;
+    font-size:16pt;
+    font-weight: bold;
+}
+.nbill-help-link img
+{
+    vertical-align:middle;
+}
+.main-dashboard-version
+{
+    font-size: 14px;
+    vertical-align:middle;
+}
+.main-dashboard-text
+{
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 10px;
+    vertical-align:middle;
+}
+.main-dashboard-config img
+{
+    vertical-align: middle;
+}

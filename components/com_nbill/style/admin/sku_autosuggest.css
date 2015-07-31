@@ -1,0 +1,63 @@
+.flist_div
+{
+    display: block;
+    position:absolute;
+    min-width:400px;
+    width: 400px;
+    z-index:100;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    color: #444444;
+}
+.flist_div ul
+{
+    list-style: none;
+    padding: 4px;
+    margin: 0px;
+}
+.flist_div ul li
+{
+    cursor: pointer;
+}
+.flist_div ul li a, .flist_div ul li a:hover
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+.ta_div
+{
+    font-size:1.2em;
+    display: block;
+    position:absolute;
+    top:3px;
+    left:7px;
+    z-index:3;
+}
+.auto_suggest_fragment
+{
+    font-weight: bold;
+    color: #000099;
+}
+.auto_suggest_close
+{
+    position:absolute;
+    right: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #ffffff;
+    z-index: 200;
+}
+.auto_suggest_close a, .auto_suggest_close a:hover
+{
+    color:#ff0000;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.list_focus
+{
+    background-color: #cccccc;
+    color: #000000;
+}

@@ -1,0 +1,61 @@
+.widget-link-item
+{
+    float:left;
+}
+.nbill-widget-coloured-link
+{
+    float:left;
+    margin: 5px;
+    overflow:hidden;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.nbill-widget-coloured-link:hover
+{
+    background-color: #bbb;
+}
+.nbill-widget-div-link
+{
+    text-align: center;
+    border: solid 1px #999;
+    margin:0;
+    padding:10px;
+    background-color:#fff;
+}
+.nbill-widget-div-link:hover
+{
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+.nbill-widget-div-link a
+{
+    text-decoration: none;
+    color: #0A70AC;
+}
+.widget-link-item.linkicon-large
+{
+    width: 110px;
+    max-width: 110px;
+    height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.linkicon-large .widget-link-item-image, .linkicon-large .widget-link-item-text
+{
+    display: block;
+}
+.linkicon-large .widget-link-item-text
+{
+    margin-top: 3px;
+}

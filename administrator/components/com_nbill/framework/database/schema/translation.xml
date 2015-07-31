@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>translation</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <extra>auto_increment</extra>
+            <description></description>
+        </column>
+        <column name="language">
+            <type>char</type>
+            <length>7</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="source_table">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="source_column">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="source_pk">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="value">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="published">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>source_pk</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>language</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>source_table</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>source_column</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

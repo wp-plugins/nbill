@@ -1,0 +1,101 @@
+body
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+td, p
+{
+    font-size: 10pt;
+    text-align: left;
+}
+.main
+{
+    margin-left:auto;
+    margin-right:auto;
+    border:solid 1px #ffffff; /* Without this, the PDF renderer only displays the first div and ignores any repeats */
+    margin-top:30px;
+}
+table
+{
+    border-collapse: collapse; /* This does not work with the PDF renderer, so we have to apply borders manually */
+}
+.nbill-invoice-table td, .nbill-invoice-table th
+{
+    border: solid 1px #aaaaaa;
+    border-bottom: none;
+    border-left: none;
+}
+.border.bottom
+{
+    border-bottom: solid 1px #aaaaaa;
+}
+.border.left
+{
+    border-left: solid 1px #aaaaaa;
+}
+th
+{
+    font-size: 10pt;
+    background-color: #dedede;
+    font-weight: bold;
+}
+.total
+{
+    font-weight: bold;
+}
+.numeric
+{
+    text-align: right;
+}
+.grand-total
+{
+    font-size: 13pt;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.vendor
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #000099;
+    text-align: center;
+}
+.small-print
+{
+    font-size: 8pt;
+}
+.remittance
+{
+    border: solid 1px #cccccc;
+}
+.payment-link
+{
+    display: block;
+    font-size: 9pt;
+    padding: 5px;
+    border: solid 1px #999999;
+    background-color: #eeeeee;
+}
+.nbill_summary_table
+{
+    width: auto;
+    min-width: 300px;
+    border-collapse: collapse;
+}
+.nbill_summary_table th, .nbill_summary_table td
+{
+    border: solid 1px #cccccc;
+    padding-top: 0px; /* Top and bottom padding must be zero due to IE faulty box model */
+    padding-bottom: 0px;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    line-height: 1.2;
+    height:25px;
+    vertical-align: middle;
+}
+.nbill_summary_sub_heading
+{
+    background-color: #dddddd;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 1.2;
+}

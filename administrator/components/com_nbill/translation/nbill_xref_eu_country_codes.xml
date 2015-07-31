@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: EU Country Codes Cross Reference</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Cross reference table for ISO codes and country names for EU members</description>
+  <reference>
+  	<table name="nbill_xref_eu_country_codes">
+  		<field type="referenceid" name="code" translate="0">Code</field>
+  		<field type="titletext" name="description" translate="1">Description</field>
+  	</table>
+  </reference>
+</joomfish>

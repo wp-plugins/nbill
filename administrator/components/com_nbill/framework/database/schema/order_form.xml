@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>order_form</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="title">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="published">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="logged_in_users_only">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+        <column name="guests_only">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="prerequisite_products">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="disqualifying_products">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="always_show">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="email_pending_to_client">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="email_confirmation_to_client">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="email_admin">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="email_admin_pending">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="admin_email_to">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="validation_code">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="process_code">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="pre_calculate_code">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="post_calculate_code">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="submit_code">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="auto_create_orders">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="auto_create_user">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="use_email_address">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="auto_create_invoice">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="auto_create_income">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="relating_to">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="shipping_id">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="tax_exemption_code">
+			<type>varchar</type>
+			<length>30</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="payment_frequency">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="currency">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="unique_invoice">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="auto_renew">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="expiry_date">
+			<type>varchar</type>
+			<length>30</length>
+			<null>NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="expire_after">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="payment_gateway">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="pending_until_paid">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="discount_voucher_code">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="order_creation_code">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="auto_handle_shipping">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="javascript_functions">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="upload_path">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="max_upload_size">
+			<type>int</type>
+			<length>10</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>100</default>
+			<description></description>
+		</column>
+		<column name="allowed_types">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default>.jpg|.gif|.png|.bmp|.txt|.pdf|.odt|.doc|.csv|.xls</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="attach_to_email">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="offline_payment_redirect">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="thank_you_redirect">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="thank_you_message">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="ordering">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+        <column name="form_type">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>OR</default>
+            <description></description>
+        </column>
+        <column name="payment_plan_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="form_unavailable_message">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="after_processing_code">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="quote_accept_redirect">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

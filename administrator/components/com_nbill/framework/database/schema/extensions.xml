@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>extensions</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="extension_type">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="extension_name">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="extension_title">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="extension_description">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="extension_date">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="date_installed">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="version">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="copyright">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="author_name">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="author_email">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="author_website">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="file_path_admin">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="file_path_frontend">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="setup_filename">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="gateway_id">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

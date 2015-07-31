@@ -1,0 +1,94 @@
+#nbill_quote_correspondence_container
+{
+    border: solid 1px #cccccc;
+    padding: 2px;
+    background-color: #eeeeee;
+}
+#nbill_quote_corre_button_container
+{
+    background-color: #dedede;
+    padding: 2px;
+}
+#nbill_quote_correspondence
+{
+    padding: 5px;
+}
+#nbill_quote_small_print, #nbill_quote_items
+{
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.nbill_summary_table
+{
+    width: 300px;
+    border-collapse: collapse;
+}
+.nbill_summary_table th, .nbill_summary_table td
+{
+    border: solid 1px #cccccc;
+    padding-top: 0px; /* Top and bottom padding must be zero due to IE faulty box model */
+    padding-bottom: 0px;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    line-height: 1.2;
+    height:25px;
+    vertical-align: middle;
+}
+.nbill_summary_sub_heading
+{
+    background-color: #dddddd;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 1.2;
+}
+table.nbill-invoice-table
+{
+    border-collapse: collapse;
+}
+.nbill-invoice-table td, .nbill-invoice-table th
+{
+    border: solid 1px #aaaaaa;
+    padding: 2px;
+}
+th
+{
+    font-size: 10pt;
+    background-color: #dedede;
+    font-weight: bold;
+}
+.total
+{
+    font-weight: bold;
+}
+.numeric
+{
+    text-align: right;
+}
+.grand-total
+{
+    font-size: 13pt;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.nbill_quote_checkbox
+{
+    width:16px;
+    height:16px;
+    padding:2px;
+    border:solid 1px #cccccc;
+    margin-left:auto;
+    margin-right:auto;
+}
+#nbill_quote_reply_email table td
+{
+    padding: 2px;
+}
+#main a.nbill_quote_selector:hover, #main a.nbill_quote_selector:active, #main a.nbill_quote_selector:focus
+{
+    background:none; /* Especially for Joomla 2.5 default template */
+}
+.nbill_quote_accepted_tr td
+{
+    color: #009900;
+}

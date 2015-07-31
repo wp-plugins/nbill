@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>product_category</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="parent_id">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="ordering">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="name">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="description">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>parent_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

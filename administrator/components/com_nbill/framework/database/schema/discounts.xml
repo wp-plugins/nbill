@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>discounts</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+        <column name="is_fee">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="discount_name">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="display_name">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="time_limited">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="start_date">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="end_date">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="global">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="logged_in_only">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="shipping_discount">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="percentage">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="amount">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="apply_to">
+            <type>varchar</type>
+            <length>5</length>
+            <null>NOT NULL</null>
+            <default>net</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="is_compound">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+		<column name="exclusive">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="priority">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="voucher">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="nominal_ledger_code">
+            <type>varchar</type>
+            <length>20</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="recurring">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="add_to_renewals">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="available">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+        <column name="available_for_documents">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="unavailable_when_used">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="prerequisite_products">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="disqualifying_products">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="country">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>WW</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="notes">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

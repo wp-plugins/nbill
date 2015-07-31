@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>paypal_preapp_resources</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="type">
+			<type>varchar</type>
+			<length>20</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="resource_id">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="currency">
+			<type>varchar</type>
+			<length>5</length>
+			<null>NOT NULL</null>
+			<default>GBP</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="amount">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="name">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="created_date">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="interval_length">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="interval_units">
+            <type>varchar</type>
+            <length>20</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="payer_email">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="g_tx_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="entity_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="order_ids">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="document_ids">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="status">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="invitation_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+		<index>
+			<type>multiple</type>
+			<columns>
+				<column>
+					<name>resource_id</name>
+				</column>
+			</columns>
+			<description></description>
+		</index>
+</table>

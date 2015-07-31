@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Profile Fields</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Profile Fields</description>
+  <reference>
+  	<table name="nbill_profile_fields">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="label" translate="1">Label</field>
+  		<field type="text" name="checkbox_text" translate="1">Checkbox Label</field>
+  		<field type="textarea" name="pre_field" translate="1">Pre-field</field>
+  		<field type="textarea" name="post_field" translate="1">Post-field</field>
+  		<field type="text" name="default_value" translate="1">Default Value</field>
+  		<field type="textarea" name="help_text" translate="1">Help Text</field>
+  	</table>
+  </reference>
+</joomfish>

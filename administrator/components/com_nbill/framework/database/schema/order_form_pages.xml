@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>order_form_pages</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <extra>auto_increment</extra>
+            <description></description>
+        </column>
+        <column name="form_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="page_no">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="published">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="label_width">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="close_gaps">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="min_width">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="intro">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="footer">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="onload">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="external_js_files">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_pre_field">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_post_field">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_default_value">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_attributes">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_help_text">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="prev_x_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="prev_y_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="prev_z_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="next_pre_field">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="next_post_field">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="next_default_value">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="next_attributes">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="next_help_text">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="next_x_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="next_y_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="next_z_pos">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="auto_tab">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="page_submit_code">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="renderer">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>form_id</name>
+            </column>
+            <column>
+                <name>page_no</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

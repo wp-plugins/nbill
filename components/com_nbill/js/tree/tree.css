@@ -1,0 +1,14 @@
+.collapsibleList li{
+  list-style:square;
+  cursor:auto;
+}
+
+li.collapsibleListOpen{
+  list-style-image:url(image://minus.png);
+  cursor:pointer;
+}
+
+li.collapsibleListClosed{
+  list-style-image:url(image://plus.png);
+  cursor:pointer;
+}

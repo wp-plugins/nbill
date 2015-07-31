@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>currency</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="code">
+			<type>char</type>
+			<length>3</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="description">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="symbol">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description>Allow either HTML entity or character (PHP htmlentities function does not always encode currency symbols on Windows, so encode_html is set to false - allow raw input to preserve HTML entities entered by admin user)</description>
+		</column>
+        <column name="override_default_formatting">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="precision_currency">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_currency_line_total">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_currency_grand_total">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="thousands_separator">
+            <type>varchar</type>
+            <length>10</length>
+            <null>NOT NULL</null>
+            <default>default</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="decimal_separator">
+            <type>varchar</type>
+            <length>10</length>
+            <null>NOT NULL</null>
+            <default>default</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="currency_format">
+            <type>varchar</type>
+            <length>25</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+		<index>
+			<type>multiple</type>
+			<columns>
+				<column>
+					<name>code</name>
+				</column>
+			</columns>
+			<description></description>
+		</index>
+</table>

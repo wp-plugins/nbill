@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Additional Links</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Additional links on the Display Options page</description>
+  <reference>
+  	<table name="nbill_additional_links">
+  		<field type="referenceid" name="ordering" translate="0">Ordering</field>
+  		<field type="titletext" name="text" translate="1">Link Text</field>
+  		<field type="text" name="description" translate="1">Description</field>
+  	</table>
+  </reference>
+</joomfish>

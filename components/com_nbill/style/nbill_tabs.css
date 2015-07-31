@@ -1,0 +1,111 @@
+/*.nbill-tab-group
+{
+    position:relative;
+}
+.nbill-tab-title
+{
+    background-color:#dddddd;
+    border:solid 1px #999999;
+    border-bottom:solid 1px #999999;
+    text-align:center !important;
+    vertical-align:middle;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    z-index: 0;
+    top: 0px;
+
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+.nbill-tab-content
+{
+    position:relative;
+    left:0px;
+    border: solid 1px #999999;
+    padding: 5px;
+
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}*/
+
+.nbill-tab-group, .nbill-tab-group *
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nbill-tab-title
+{
+    float:left;
+    background-color:#ddd;
+    border:solid 1px #999;
+    text-align:center !important;
+    vertical-align:middle;
+    cursor:pointer;
+    overflow:hidden;
+    position:relative;
+    z-index: 10;
+    margin-left:3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    max-width:175px;
+    height:20px;
+
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+.nbill-tab-title:hover
+{
+    background-color:#eee;
+}
+.nbill-tab-title.selected
+{
+    border-bottom: solid 1px #fff;
+    background-color:#fff;
+}
+.nbill-tab-title.plain_link
+{
+    border:none;
+    background-color:transparent;
+}
+.nbill-tab-title.plain_link:hover
+{
+    background-color:transparent;
+}
+.nbill-tab-content
+{
+    clear:both;
+    border: solid 1px #999;
+    padding: 5px;
+    position:relative;
+    top:-1px;
+
+    -moz-border-radius: 3px 7px 7px 7px;
+    -webkit-border-radius: 3px 7px 7px 7px;
+    border-radius: 3px 7px 7px 7px;
+}
+
+@media all and (max-width: 499px)
+{
+    .nbill-tab-title
+    {
+        max-width:130px;
+    }
+    .responsive-tabs .nbill-tab-title, .responsive-tabs .nbill-tab-title.selected
+    {
+        float:none;
+        border: solid 1px #999;
+        margin-top:-1px;
+
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        margin-left:0px;
+        max-width: 100%;
+    }
+}

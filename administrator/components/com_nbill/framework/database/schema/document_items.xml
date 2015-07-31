@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>document_items</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="document_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+        <column name="ordering">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="entity_id">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="nominal_ledger_code">
+			<type>varchar</type>
+			<length>20</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="product_description">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="detailed_description">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="net_price_per_unit">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="no_of_units">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="discount_percentage">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="discount_amount">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="discount_description">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="net_price_for_item">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="tax_rate_for_item">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="electronic_delivery">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="tax_for_item">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="shipping_id">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="shipping_for_item">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="tax_rate_for_shipping">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+		<column name="tax_for_shipping">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="gross_price_for_item">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="product_code">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="quote_pay_freq">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>AA</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="quote_auto_renew">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="quote_relating_to">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="quote_unique_invoice">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="quote_mandatory">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="quote_awaiting_payment">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="quote_item_accepted">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="quote_g_tx_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="section_name">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="section_discount_title">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="section_discount_percent">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="section_quote_atomic">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="page_break">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>document_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

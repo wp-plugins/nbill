@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>email_log</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <extra>auto_increment</extra>
+            <description></description>
+        </column>
+        <column name="type">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>AA</default>
+            <description></description>
+        </column>
+        <column name="entity_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="document_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="order_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="pending_order_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="from">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="to">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="cc">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="bcc">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="timestamp">
+            <type>int</type>
+            <length>11</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="status">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="subject">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="message">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="html">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>entity_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>document_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>order_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>pending_order_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

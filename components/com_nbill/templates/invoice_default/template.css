@@ -1,0 +1,21 @@
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+#img-print {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: ###title_colour##;
+}
+.print-page {
+    width: 200px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.document-line-items {
+    padding-top:50px;
+}

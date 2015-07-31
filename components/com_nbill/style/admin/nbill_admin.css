@@ -1,0 +1,540 @@
+div.main
+{
+    text-align: left;
+}
+div.nbill-message
+{
+    clear:both;
+    border: solid 2px #cc0000;
+    padding: 3px;
+    padding-left: 28px;
+    background-image: url('info.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #990000;
+    background-color: #ffffdd;
+    margin-bottom: 2px;
+}
+div.nbill-message-ie-padding-bug-fixer
+{
+    clear:both;
+    border-top: solid 1px white;
+    height:0px;
+}
+td, th
+{
+    font-size: inherit !important; /* Override for J1.0 */
+}
+body, input, select
+{
+    font-size:12px !important;
+}
+.nbill-error {
+    border: solid 2px #ff0000 !important;
+}
+
+/** Toolbar **/
+div#toolbar-box
+{
+    display: none !important;
+}
+div#nbill-toolbar-logo
+{
+  float:left;
+}
+div#nbill-toolbar-container
+{
+    float: right;
+}
+a.nbill-toolbar
+{
+    color: #808080;
+    background-color:#f9f9f9;
+    text-decoration: none;
+    display: block;
+    border: solid 1px #dddddd;
+    width: 55px;
+    padding: 3px;
+    text-align: center;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+a.nbill-toolbar:hover
+{
+    color: #333333;
+    background-color: #dddddd;
+    border: solid 1px #999999;
+    text-decoration: none;
+}
+
+/** Admin forms **/
+.nbill-static-help-text
+{
+    padding: 5px;
+    border: solid 1px #ccc;
+    background-color: #D9EBF3;
+    text-align:left;
+    font-weight:normal;
+
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+label
+{
+    white-space: normal;
+}
+.inputbox.calendar
+{
+    max-width: 115px;
+}
+.inputbox.numeric
+{
+    max-width:130px;
+}
+.inputbox.small-numeric
+{
+    max-width:60px;
+}
+.inputbox.date-entry
+{
+    width:90px;
+}
+.inputbox.long
+{
+    width:300px;
+    max-width:300px;
+}
+select[multiple="multiple"].inputbox
+{
+    width:300px;
+}
+textarea
+{
+    width:300px;
+    height:150px;
+}
+.nbill-hidden-warning
+{
+  z-index: -100;
+  display: none;
+}
+.nbill-page-nav-footer
+{
+    background-color:#f0f0f0 !important;
+    text-align:center !important;
+    width:100%;
+}
+/*table.adminheading
+{
+    float:left;
+}*/
+.adminheading th
+{
+  background-repeat:no-repeat;
+}
+.nbill-content-page
+{
+    width:100%;
+}
+.nbill_editor_title
+{
+    width: 20% !important;
+    white-space:nowrap;
+}
+div.rounded-table
+{
+    overflow: hidden;
+    border: solid 1px #999;
+    background-color:#eee;
+    padding: 0;
+    clear: both;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.rounded-table.compact, .inline-block
+{
+    display:inline-block;
+}
+table.adminform, table.adminlist
+{
+    clear:both;
+    background-color:#eee;
+    border-collapse:collapse;
+    width:100%;
+}
+table.adminform th, table.adminlist th
+{
+    background-color: #aaa;
+    background-image: none !important;
+    color: #fff;
+    font-weight: bold;
+    font-size:13px;
+    padding: 5px;
+    text-align: left;
+    border: solid 1px #aaa;
+    border-top:none;
+}
+table.adminform th:first-child, table.adminlist th:first-child {
+    border-left:none;
+}
+table.adminform th:last-child, table.adminlist th:last-child {
+    border-right:none;
+}
+table.adminform td, table.adminlist td
+{
+    vertical-align: top;
+    padding: 5px;
+    border:solid 1px #ccc;
+    text-align: left;
+}
+table.adminlist td
+{
+    background-color: inherit !important;
+}
+table.adminlist td.selector, table.adminlist th.selector
+{
+    text-align:center;
+    max-width:70px;
+    overflow:hidden;
+}
+table.adminlist tr:nth-child(2n)
+{
+    background-color:#fff;
+}
+table.summary-list tr:nth-child(2n)
+{
+    background-color:#fff;
+}
+table.summary-list
+{
+    width:auto;
+}
+tr.summary-total-row td
+{
+    font-weight:bold;
+    background-color:#ddd;
+}
+td.numeric, th.numeric
+{
+    text-align:right;
+}
+
+.nbill-setting-caption
+{
+    width:30%;
+}
+table.adminlist tr:hover
+{
+    background-color: #dfdfdf;
+}
+table.adminlist tr.selected
+{
+    background-color: #ffffcc;
+}
+th.housekeeping-side-heading
+{
+    max-width: 150px;
+}
+td.housekeeping-values
+{
+    min-width:75%;
+}
+.nbill-page-nav-footer table.adminlist tr:hover, tr.nbill_tr_no_highlight:hover
+{
+    background-color: #ffffff !important;
+}
+
+/** For Joomla 3.0 **/
+.nbill_form_input, .nbill_form_label
+{
+    vertical-align:middle;
+    display:inline;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+input, select
+{
+    /*width: auto;*/
+    margin: 2px !important;
+}
+/** Joomla 3.0 End **/
+
+.nicEdit-main
+{
+    background-color:#ffffff;
+}
+
+/** Extension tabs **/
+#nbill-extension-tabs
+{
+    height: 40px;
+}
+.nbill-ext-tab
+{
+    background-image: url('ext-tab-icon-bg.png');
+    width:175px;
+    height: 27px;
+}
+.nbill-ext-tab-selected
+{
+    background-image: url('ext-tab-icon-bg-selected.png');
+    background-repeat: no-repeat;
+    width:175px;
+    height: 27px;
+}
+.nbill-ext-tab-selected a, .nbill-ext-tab a, .nbill-ext-tab-selected a:link, .nbill-ext-tab a:link, .nbill-ext-tab-selected a:visited, .nbill-ext-tab a:visited
+{
+    display:block;
+    height: 27px;
+    width: 174px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 11px;
+    font-weight: bold;
+}
+.nbill-ext-tab-selected img, .nbill-ext-tab img
+{
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+.nbill-ext-tab-text
+{
+    position: relative;
+    top: 6px;
+    left: 5px;
+    vertical-align:middle;
+    width:165px;
+    color: #555555;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/** Content specific (should be separated out really) **/
+.nbill-ledger-report-table
+{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #dddddd;
+    border-spacing: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.nbill-ledger-report-table td
+{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 4px;
+}
+.nbill-transaction-table
+{
+    border-collapse: collapse;
+}
+.nbill-transaction-table td
+{
+    border: solid 1px #999999;
+    padding: 3px;
+}
+.nbill-transaction-table th
+{
+    border: solid 1px #666666;
+    background-color: #ededed;
+    padding: 3px;
+}
+table.nbill-invoice-breakdown th, table.nbill-invoice-breakdown td
+{
+    white-space: nowrap;
+}
+table.nbill-anomaly
+{
+    border-collapse: collapse;
+}
+table.nbill-anomaly td, table.nbill-anomaly th
+{
+    border:solid 1px #cccccc !important;
+}
+table.nbill-email-table
+{
+    border-collapse: collapse;
+}
+td.nbill-email-table
+{
+    border: solid 1px #cccccc;
+}
+#email_form
+{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:900px;
+    border:solid 1px #cccccc;
+    background-color:#eeeeee;
+    padding:10px;
+}
+iframe#ifr_email_message
+{
+    width: 690px;
+    height: 400px;
+}
+.nbill-html-editor textarea
+{
+    width: 500px;
+    height: 300px;
+}
+.list-multi-selector
+{
+    /*width:600px;*/
+}
+.scrollable-multi-select
+{
+    overflow:auto;
+    float:left;
+}
+.list-container, .list-selected-items
+{
+    float:left;
+}
+.list-selector-buttons
+{
+    float:left;
+    padding-top:50px;
+}
+
+.translation-source
+{
+    overflow:auto;
+    background-color:#eee;
+    border: solid 1px #cccccc;
+}
+textarea.translation-target
+{
+    width:350px;
+}
+textarea.code
+{
+    height:150px;
+}
+textarea.large-text
+{
+    width:750px;
+    height:350px;
+    max-width:100%;
+    max-height:75%;
+}
+
+/** ISIS template interference **/
+select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    height: auto;
+    line-height: auto;
+    /*width:auto;*/
+    max-width:150px;
+}
+#order_no_search, #invoice_no_search, #receipt_no_search, #payment_no_search {
+    max-width: 70px;
+}
+select {
+    width: auto;
+}
+
+.action-separator
+{
+    margin: 3px;
+    border: solid 1px #999;
+}
+
+.floating-tablette
+{
+    float:left;
+    margin-right:-1px;
+    margin-top: -1px;
+}
+table.adminform table.floating-tablette th
+{
+    background: none !important;
+    color: #333 !important;
+    font-weight: normal;
+    border: solid 1px #ccc;
+}
+table.borderless, table.borderless th, table.borderless td
+{
+    border: none;
+    padding: 0px;
+    vertical-align:middle;
+}
+table.adminform td.center-contents, table.adminlist td.center-contents, .center-contents
+{
+    text-align:center;
+}
+.word-breakable
+{
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for webkit */
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.small-screen, .touch-screen
+{
+    position:absolute;
+    background-color:#eee;
+    height:100%;
+    z-index:-10000;
+}
+.large-screen
+{
+    z-index: 10000;
+}
+div.resizable
+{
+    resize: both;
+}
+textarea#email_message
+{
+    width:100%;
+    height:350px;
+}
+
+.subhead-collapse.collapse {
+    display:none; /*Not using Joomla toolbar*/
+}
+.header {
+    height:35px;
+    margin-bottom:10px;
+}
+#wpcontent {
+    padding: 8px;
+}
+dd, li {
+    margin-bottom:0px;
+}
+
+#overDiv {
+    z-index: 9999999 !important;
+}
+
+@media print {
+    * {
+        background-repeat:no-repeat !important;
+    }
+    .navbar-fixed-top {
+        display:none;
+    }
+    a[href]:after {
+        content: "";
+    }
+    abbr[title]:after {
+        content: "";
+    }
+}

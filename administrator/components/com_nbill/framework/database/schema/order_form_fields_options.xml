@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>order_form_fields_options</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="form_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="field_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="ordering">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="option_value">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="option_description">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="related_product_cat">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="related_product">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="related_product_quantity">
+			<type>varchar</type>
+			<length>30</length>
+			<null>NOT NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>form_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>field_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>ordering</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

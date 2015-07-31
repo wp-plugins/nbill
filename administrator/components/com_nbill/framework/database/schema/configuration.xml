@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>configuration</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="error_email">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="date_format">
+			<type>varchar</type>
+			<length>20</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="locale">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="precision_decimal">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_quantity">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_tax_rate">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_currency">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+		<column name="precision_currency_line_total">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="precision_currency_grand_total">
+            <type>smallint</type>
+            <null>NOT NULL</null>
+            <default>2</default>
+            <description></description>
+        </column>
+        <column name="thousands_separator">
+            <type>varchar</type>
+            <length>10</length>
+            <null>NOT NULL</null>
+            <default>default</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="decimal_separator">
+            <type>varchar</type>
+            <length>10</length>
+            <null>NOT NULL</null>
+            <default>default</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="currency_format">
+            <type>varchar</type>
+            <length>25</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="negative_in_brackets">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="select_users_from_list">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="default_user_groups">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="cron_auth_token">
+			<type>varchar</type>
+			<length>32</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="version_auto_check">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="auto_update">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="default_start_date">
+			<type>char</type>
+			<length>2</length>
+			<null>NOT NULL</null>
+			<default>BB</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="switch_to_ssl">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+        <column name="all_pages_ssl">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="email_invoice_option">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>AA</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="title_colour">
+            <type>varchar</type>
+            <length>7</length>
+            <null>NOT NULL</null>
+            <default>366999</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="heading_bg_colour">
+            <type>varchar</type>
+            <length>7</length>
+            <null>NOT NULL</null>
+            <default>366999</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="heading_fg_colour">
+            <type>varchar</type>
+            <length>7</length>
+            <null>NOT NULL</null>
+            <default>ffffff</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="supporting_docs_path">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="default_itemid">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <default>0</default>
+            <null>NOT NULL</null>
+            <description></description>
+        </column>
+        <column name="redirect_to_itemid">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="admin_custom_stylesheet">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default>template_green.css</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="use_legacy_document_editor">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="edit_products_in_documents">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="auto_check_eu_vat_rates">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="api_url_eu_vat_rates">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default>http://www.nbill.co.uk/api/v1/eu_vat_rates.json</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="geo_ip_lookup">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="api_url_geo_ip">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default>http://www.telize.com/geoip/##ip##</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="geo_ip_fail_on_mismatch">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="eu_tax_rate_refresh_timestamp">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <default>0</default>
+            <null>NOT NULL</null>
+            <description></description>
+        </column>
+        <column name="disable_email">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="timezone">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="default_electronic">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="never_hide_quantity">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

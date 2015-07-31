@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Products</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Product Names and Download Links</description>
+  <reference>
+  	<table name="nbill_product">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Name</field>
+  		<field type="textarea" name="description" translate="1">Description</field>
+  		<field type="text" name="download_link_text" translate="1">Download Link Text</field>
+  		<field type="text" name="download_link_text_2" translate="1">2nd Download Link Text</field>
+  		<field type="text" name="download_link_text_3" translate="1">3rd Download Link Text</field>
+  		<field type="text" name="download_link_text_4" translate="1">4th Download Link Text</field>
+  		<field type="text" name="download_link_text_5" translate="1">5th Download Link Text</field>
+  		<field type="text" name="download_link_text_6" translate="1">6th Download Link Text</field>
+  		<field type="text" name="download_link_text_7" translate="1">7th Download Link Text</field>
+  		<field type="text" name="download_link_text_8" translate="1">8th Download Link Text</field>
+  		<field type="text" name="download_link_text_9" translate="1">9th Download Link Text</field>
+  		<field type="text" name="download_link_text_10" translate="1">10th Download Link Text</field>
+  		<field type="textarea" name="email_downloads_message" translate="1">E-mail Downloads Message</field>
+  	</table>
+  </reference>
+</joomfish>

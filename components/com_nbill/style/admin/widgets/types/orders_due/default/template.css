@@ -1,0 +1,23 @@
+input[type="number"]#number_of_units, input[type="number"]#max_records
+{
+    width: 60px !important;
+}
+.nbill-orders-due
+{
+    overflow:auto;
+}
+.orders-due-table
+{
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+.orders-due-table th, .orders-due-table td
+{
+    border: solid 1px #cccccc;
+    padding: 3px;
+    background-color: #ffffff;
+}
+.orders-due-table th.numeric, .orders-due-table td.numeric
+{
+    text-align:right;
+}
