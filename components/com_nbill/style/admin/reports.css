@@ -1,0 +1,51 @@
+table.adminform th.report-amount,
+table.adminlist th.report-amount,
+table.adminform td.report-amount,
+table.adminlist td.report-amount,
+th.report-amount,
+td.report-amount
+{
+    text-align:right;
+    vertical-align:middle;
+}
+table.adminform th.report-total,
+table.adminlist th.report-total,
+table.adminform td.report-total,
+table.adminlist td.report-total,
+th.report-total,
+td.report-total
+{
+    text-align:right;
+    font-weight:bold;
+    white-space:nowrap;
+}
+table.adminform th.report-border-top,
+table.adminlist th.report-border-top,
+table.adminform td.report-border-top,
+table.adminlist td.report-border-top,
+th.report-border-top,
+td.report-border-top
+{
+    border-top: solid 2px #999;
+}
+th.fill-column, td.fill-column
+{
+    width:100%;
+    vertical-align:middle;
+}
+th.tax-summary-label, td.tax-summary-label
+{
+    width:50%;
+}
+th.tax-summary-amount, td.tax-summary-amount
+{
+    width: 80px;
+}
+
+@media all and (max-width: 399px)
+{
+    th.tax-summary-label, td.tax-summary-label
+    {
+        width:35%;
+    }
+}

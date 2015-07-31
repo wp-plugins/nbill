@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Profile Field Options</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Profile Field Options</description>
+  <reference>
+  	<table name="nbill_profile_fields_options">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="option_description" translate="1">Option Description</field>
+  	</table>
+  </reference>
+</joomfish>

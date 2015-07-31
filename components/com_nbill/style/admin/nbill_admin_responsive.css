@@ -1,0 +1,257 @@
+@media all and (min-width: 1100px) {
+    tr.responsive-cell.medium-or-narrow-only,
+    th.responsive-cell.medium-or-narrow-only,
+    td.responsive-cell.medium-or-narrow-only,
+    div.responsive-cell.medium-or-narrow-only,
+    span.responsive-cell.medium-or-narrow-only
+    {
+        display:none;
+    }
+}
+
+@media all and (min-width: 900px) {
+    tr.responsive-cell.narrow-only,
+    th.responsive-cell.narrow-only,
+    td.responsive-cell.narrow-only,
+    div.responsive-cell.narrow-only,
+    span.responsive-cell.narrow-only
+    {
+        display:none;
+    }
+}
+
+@media all and (min-width: 800px) {
+    tr.responsive-cell.very-narrow-only,
+    th.responsive-cell.very-narrow-only,
+    td.responsive-cell.very-narrow-only,
+    div.responsive-cell.very-narrow-only,
+    span.responsive-cell.very-narrow-only
+    {
+        display:none;
+    }
+}
+
+@media all and (min-width: 600px) {
+    tr.responsive-cell.inverse-optional,
+    th.responsive-cell.inverse-optional,
+    td.responsive-cell.inverse-optional,
+    div.responsive-cell.inverse-optional,
+    span.responsive-cell.inverse-optional
+    {
+        display:none;
+    }
+}
+
+@media all and (max-width: 1049px) {
+    tr.responsive-cell.extra-extra-wide-only,
+    th.responsive-cell.extra-extra-wide-only,
+    td.responsive-cell.extra-extra-wide-only,
+    div.responsive-cell.extra-extra-wide-only,
+    span.responsive-cell.extra-extra-wide-only
+    {
+        display:none;
+    }
+}
+@media all and (max-width: 899px) {
+    tr.responsive-cell.extra-wide-only,
+    th.responsive-cell.extra-wide-only,
+    td.responsive-cell.extra-wide-only,
+    div.responsive-cell.extra-wide-only,
+    span.responsive-cell.extra-wide-only
+    {
+        display:none;
+    }
+    .small-screen
+    {
+        z-index:10000;
+    }
+    .large-screen
+    {
+        z-index:-10000;
+    }
+}
+@media all and (max-width: 799px) {
+    tr.responsive-cell.wide-only,
+    th.responsive-cell.wide-only,
+    td.responsive-cell.wide-only,
+    div.responsive-cell.wide-only,
+    span.responsive-cell.wide-only
+    {
+        display:none;
+    }
+    iframe#ifr_email_message
+    {
+        width: 550px;
+    }
+}
+@media all and (max-width: 699px) {
+    .nbill-html-editor > div, .nicEdit-main, .list-multi-selector
+    {
+        width: 400px !important;
+    }
+    textarea.translation-target
+    {
+        width:250px;
+    }
+    iframe#ifr_email_message
+    {
+        width: 450px;
+    }
+}
+
+@media all and (max-width: 599px) {
+    tr.responsive-cell.optional,
+    th.responsive-cell.optional,
+    td.responsive-cell.optional,
+    div.responsive-cell.optional,
+    span.responsive-cell.optional
+    {
+        display:none;
+    }
+    .nbill-html-editor > div, .nicEdit-main, .list-multi-selector
+    {
+        width: 300px !important;
+    }
+    .inputbox.long
+    {
+        width:250px;
+    }
+    textarea
+    {
+        width:250px;
+    }
+    textarea.translation-target
+    {
+        width:150px;
+    }
+    .inputbox.squashable
+    {
+        width:100px;
+    }
+    iframe#ifr_email_message
+    {
+        width: 350px;
+    }
+}
+
+@media all and (max-width: 481px) {
+    tr.responsive-cell.priority,
+    th.responsive-cell.priority,
+    td.responsive-cell.priority,
+    div.responsive-cell.priority,
+    span.responsive-cell.priority
+    {
+      display: none;
+    }
+
+    .container-fluid.container-main, body.contentpane.component
+    {
+        /** Joomla ISIS leaves too much padding **/
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .nbill-html-editor > div, .nicEdit-main, .list-multi-selector
+    {
+        width: 260px !important;
+    }
+
+    .scrollable-multi-select
+    {
+        max-width: 200px;
+    }
+    textarea
+    {
+        width:200px;
+    }
+    textarea.translation-target
+    {
+        width:100px;
+    }
+
+    iframe#ifr_email_message
+    {
+        width: 250px;
+    }
+
+    .inputbox
+    {
+        max-width:170px !important;
+    }
+
+    select[multiple="multiple"].inputbox
+    {
+        width:250px;
+    }
+    .inputbox.small-numeric
+    {
+        max-width:50px;
+    }
+}
+
+@media all and (max-width: 399px) {
+    tr.responsive-cell.high-priority,
+    th.responsive-cell.high-priority,
+    td.responsive-cell.high-priority,
+    div.responsive-cell.high-priority,
+    span.responsive-cell.high-priority
+    {
+      display: none;
+    }
+
+    .container-fluid.container-main, body.contentpane.component
+    {
+        /** Joomla ISIS leaves too much padding **/
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .nbill-setting-caption
+    {
+        width: 20%;
+    }
+    textarea
+    {
+        width:150px;
+    }
+    textarea.translation-target
+    {
+        width:75px;
+    }
+    .inputbox
+    {
+        width: 135px;
+    }
+    .inputbox.long
+    {
+        width:150px;
+    }
+    select[multiple="multiple"].inputbox
+    {
+        width:150px;
+    }
+    .nbill-html-editor > div, .nicEdit-main, .list-multi-selector
+    {
+        width: 210px !important;
+    }
+
+    .scrollable-multi-select
+    {
+        max-width: 175px;
+    }
+    iframe#ifr_email_message
+    {
+        width: 175px;
+    }
+}
+
+/** Touch screen devices - CSS4 is poorly supported at time of writing, and Chrome says it has no pointer even when it has **/
+@media (hover:none) {
+    .touch-screen
+    {
+        display: block;
+    }
+    /*.has-pointer
+    {
+        display: none;
+    }*/
+}

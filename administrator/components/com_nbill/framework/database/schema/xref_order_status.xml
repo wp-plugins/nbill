@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>xref_order_status</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="code">
+			<type>char</type>
+			<length>2</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="description">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>code</name>
+            </column>
+        </columns>
+    </primary>
+</table>

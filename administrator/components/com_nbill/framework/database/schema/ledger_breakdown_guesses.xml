@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>ledger_breakdown_guesses</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="transaction_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <description></description>
+        </column>
+        <column name="transaction_type">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>IN</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>transaction_id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

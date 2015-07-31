@@ -1,0 +1,136 @@
+form
+{
+    margin: 0px;
+    padding: 0px;
+}
+#nbill_form_container
+{
+    position: relative;
+}
+#nbill_form
+{
+    position: absolute;
+}
+.nbill_control
+{
+    width: auto;
+}
+.nbill_checkbox
+{
+    margin-bottom: auto;
+    margin-top: auto;
+    width:15px !important;
+    height:15px;
+    vertical-align: middle;
+    margin-left:0px;
+}
+.nbill_radio
+{
+    width: 15px !important;
+    height: 18px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 3px;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+.nbill_radio_vertical
+{
+    height: 18px;
+}
+.nbill_label
+{
+    width:200px;
+    float:left;
+    margin-top: 3px;
+}
+.nbill_confirm_label
+{
+    clear:left;
+    margin-top: 3px;
+}
+.nbill_value
+{
+    float: left;
+    max-width: 100%;
+}
+.nbill_confirm_value
+{
+    margin-top: 3px;
+}
+.nbill_field
+{
+    position:absolute;
+}
+.field_in_error
+{
+    border: solid 2px #ff0000;
+}
+.nbill_summary_table
+{
+    min-width: 230px;
+    border-collapse: collapse;
+}
+.nbill_summary_table th, .nbill_summary_table td
+{
+    border: solid 1px #cccccc;
+    padding: 3px !important;
+    line-height: 1.2;
+    height:25px;
+    vertical-align: middle;
+}
+.nbill_summary_sub_heading
+{
+    background-color: #dddddd;
+    color: #333333;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.nbill_summary_last_row
+{
+    border-bottom: solid 1px #000000 !important;
+}
+.nbill_summary_amount_value
+{
+    white-space: nowrap;
+    text-align: right;
+}
+.nbill_form_table
+{
+    display: table;
+    margin: auto;
+}
+.nbill_form_table td
+{
+    padding: 3px !important;
+}
+.nbill_gateway_fee
+{
+    color: #0000dd;
+}
+
+/** Responsive order forms **/
+.billing-fields
+{
+    position:relative;
+}
+.nbill-field-responsive
+{
+    clear:both;
+    position: relative;
+    margin-bottom:7px;
+}
+.nbill-field-responsive .field-value, .nbill-field-responsive label
+{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+.nbill-field-responsive div#row_NBILL_CORE_login
+{
+    display: table;
+    margin:auto;
+}
+/** Responsive order forms end **/

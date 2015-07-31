@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>order_form_fields</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="form_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="page_no">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="published">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+		<column name="ordering">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="field_type">
+			<type>char</type>
+			<length>2</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="name">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="x_pos">
+			<type>int</type>
+			<length>11</length>
+			<signed>SIGNED</signed>
+			<null>NULL</null>
+			<default>NULL</default>
+			<description></description>
+		</column>
+		<column name="y_pos">
+			<type>int</type>
+			<length>11</length>
+			<signed>SIGNED</signed>
+			<null>NULL</null>
+			<default>NULL</default>
+			<description></description>
+		</column>
+		<column name="z_pos">
+			<type>int</type>
+			<length>11</length>
+			<signed>SIGNED</signed>
+			<null>NULL</null>
+			<default>NULL</default>
+			<description></description>
+		</column>
+        <column name="override_absolute">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="label">
+			<type>text</type>
+			<length></length>
+			<null>NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="merge_columns">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="attributes">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="checkbox_text">
+			<type>text</type>
+			<length></length>
+			<null>NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="horizontal_options">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="pre_field">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="post_field">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="default_value">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="required">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="help_text">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="xref">
+		    <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="xref_sql">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="confirmation">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="related_product_cat">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="related_product">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="related_product_quantity">
+			<type>varchar</type>
+			<length>30</length>
+			<null>NOT NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="override_freq">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="order_value">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="value_required_for_order">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>true</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="entity_mapping">
+		    <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="contact_mapping">
+		    <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="show_on_summary">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>2</default>
+			<description></description>
+		</column>
+        <column name="extended_params">
+            <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>form_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>page_no</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

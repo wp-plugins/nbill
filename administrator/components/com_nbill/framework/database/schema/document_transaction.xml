@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>document_transaction</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="document_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="transaction_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="date">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="net_amount">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_rate_1">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_amount_1">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_rate_2">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_amount_2">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_rate_3">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_amount_3">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="gross_amount">
+            <type>decimal</type>
+            <length>20,6</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+    </columns>
+        <primary>
+            <columns>
+                <column>
+                    <name>document_id</name>
+                </column>
+                <column>
+                    <name>transaction_id</name>
+                </column>
+                <column>
+                    <name>date</name>
+                </column>
+            </columns>
+        </primary>
+</table>

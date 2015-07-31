@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Tax Rates</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Tax Rate Names and Related Small Print/Payment Instructions</description>
+  <reference>
+  	<table name="nbill_tax">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="tax_name" translate="1">Tax Name</field>
+  		<field type="text" name="tax_abbreviation" translate="1">Abbreviation</field>
+  		<field type="text" name="tax_reference_desc" translate="1">Tax Reference Description</field>
+  		<field type="textarea" name="payment_instructions" translate="1">Payment Instructions</field>
+  		<field type="textarea" name="small_print" translate="1">Small Print</field>
+  	</table>
+  </reference>
+</joomfish>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>transaction</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+        <column name="transaction_type">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>IN</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="transaction_no">
+			<type>varchar</type>
+			<length>30</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="document_ids">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+            <extra_column_definition>CHARACTER SET latin1 COLLATE latin1_general_ci</extra_column_definition>
+		</column>
+        <column name="entity_id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="name">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="address">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="country">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="for">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="method">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="currency">
+			<type>char</type>
+			<length>3</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="amount">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="tax_rate_1">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="tax_rate_1_electronic_delivery">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+		<column name="tax_amount_1">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="tax_rate_2">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="tax_rate_2_electronic_delivery">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_amount_2">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="tax_rate_3">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+		<column name="tax_rate_3_electronic_delivery">
+            <type>tinyint</type>
+            <length>4</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="tax_amount_3">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="tax_reference">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="date">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="reference">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="notes">
+		    <type>text</type>
+            <length></length>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+		<column name="no_summary">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="g_tx_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+        <column name="added_document_item_id">
+            <type>varchar</type>
+            <length>255</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>document_ids</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>entity_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>currency</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>date</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>g_tx_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

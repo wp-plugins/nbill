@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>address</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <extra>auto_increment</extra>
+            <description></description>
+        </column>
+        <column name="line_1">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="line_2">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="line_3">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="town">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="state">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="country">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="postcode">
+            <type>varchar</type>
+            <length>20</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

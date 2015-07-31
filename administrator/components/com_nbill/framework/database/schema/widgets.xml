@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>widgets</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+            <type>int</type>
+            <length>11</length>
+            <signed>UNSIGNED</signed>
+            <null>NOT NULL</null>
+            <extra>auto_increment</extra>
+            <description></description>
+        </column>
+        <column name="title">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="show_title">
+			<type>tinyint</type>
+			<length>4</length>
+			<null>NOT NULL</null>
+			<default>1</default>
+			<description></description>
+		</column>
+        <column name="published">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="configurable">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="params">
+            <type>text</type>
+            <null>NULL</null>
+            <default></default>
+            <allow_html>true</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="width">
+            <type>varchar</type>
+            <length>10</length>
+            <null>NOT NULL</null>
+            <default>auto</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="widget_type">
+            <type>varchar</type>
+            <length>50</length>
+            <null>NOT NULL</null>
+            <default>html</default>
+            <allow_html>false</allow_html>
+            <encode_html>false</encode_html>
+            <description></description>
+        </column>
+        <column name="ordering">
+            <type>int</type>
+            <length>11</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <description></description>
+        </column>
+
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

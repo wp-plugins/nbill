@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>shipping_price</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="shipping_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="currency_code">
+			<type>char</type>
+			<length>3</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="net_price_per_unit">
+			<type>decimal</type>
+			<length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>vendor_id</name>
+				</column>
+				<column>
+					<name>shipping_id</name>
+				</column>
+				<column>
+					<name>currency_code</name>
+            </column>
+        </columns>
+    </primary>
+</table>

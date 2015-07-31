@@ -1,0 +1,99 @@
+body
+{
+    background-color: #f6f6f6;
+}
+body, td
+{
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+a, a:visited
+{
+    color: #095197;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.fe_admin_container
+{
+
+}
+table.adminlist, table.adminform
+{
+    background-color:#ffffff;
+}
+.fe_admin_control_bar
+{
+    padding: 2px;
+    background-color: #eaeaea;
+    border: solid 1px #cccccc;
+    margin-bottom: 5px;
+}
+.pre_admin_left
+{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+.pre_admin_right
+{
+    position: absolute;
+    top: 11px;
+    right: 15px;
+}
+.pre_admin_centre
+{
+    position: relative;
+    top: 0px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.adminlist
+{
+    border-collapse: collapse;
+    margin-top:5px;
+    width: 100%;
+}
+div.rounded-table table.adminlist {
+    margin-top: 0px;
+}
+.adminlist td, .adminlist th
+{
+    border: solid 1px #cccccc;
+    padding: 2px;
+}
+.adminlist th
+{
+    background-color: #eaeaea !important;
+}
+.nbill-page-nav-footer table.adminlist
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+.adminform
+{
+    border: solid 1px #cccccc;
+    background-color: #f1f1f1;
+}
+
+@media all and (max-width: 763px) {
+    .fe_admin_control_bar
+    {
+        height:18px;
+    }
+    .pre_admin_right
+    {
+        display:none;
+    }
+    .pre_admin_centre
+    {
+        position: absolute;
+        top: 11px;
+        right: 15px;
+        text-align: right;
+    }
+}

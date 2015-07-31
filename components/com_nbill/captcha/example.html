@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- example form for captcha -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="noindex">
+<title>Captcha test</title>
+</head>
+
+<body>
+<form method="POST" action="verify.php">
+<img src="captcha-image.php" alt="Random letters" id="captcha" /><br>
+Letter code: <input type="text" size="5" maxlength="5" name="captcha"
+     onchange="document.getElementById('regbutton').disabled=false"
+      tabindex=""><br>
+<a href="" onclick="captcha_refresh()">[change letter
+code]</a><br>
+<input type="submit">
+<script type="text/javascript">
+      function captcha_refresh() {
+      e=document.getElementById('captcha');
+      dv=new Date();
+      e.src="captcha-image.php?dummy=" + dv.getTime();
+      return false;
+    }
+</script></body>
+</html>
+

@@ -1,0 +1,219 @@
+div.nbill-message
+{
+    clear:both;
+    border: solid 2px #cc0000;
+    padding: 3px;
+    padding-left: 28px;
+    background-image: url('padded_info.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #990000;
+    background-color: #ffffdd;
+    margin: 5px;
+    text-align: left;
+}
+.nbill-login-box-outer
+{
+    width: 100%;
+}
+.nbill-login-box-inner
+{
+    display: table;
+    margin: auto;
+    /*white-space: nowrap;*/
+}
+.nbill-link-disabled, .nbill-link-disabled a, .nbill-link-disabled a:hover, .nbill-link-disabled a:visited
+{
+    color:#777777 !important;
+    text-decoration: none !important;
+}
+.nbill-button
+{
+    white-space: normal;
+}
+.nbill-renew-submit
+{
+    text-align:right;
+}
+#order_form input
+{
+    margin: 0 !important;
+}
+.nbill_form_input, .nbill_form_label
+{
+    vertical-align:middle;
+    display:inline;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+input[type="radio"], input[type="checkbox"] {
+    vertical-align:middle;
+    display:inline;
+    margin-top:2px;
+    margin-bottom:2px;
+    margin-right:2px;
+}
+input[type="checkbox"]:checked + label:before {
+    content: none; /* Otherwise the new default joomla 3.0 template messes things up */
+}
+input.calendar-textbox {
+    width: 100px;
+    margin-bottom:0px;
+}
+#order_form input[type="radio"], #order_form input[type="checkbox"]
+{
+    margin-right: 3px !important;
+}
+#overDiv table
+{
+    margin:0;
+}
+#overDiv table td font
+{
+    padding: 1px;
+}
+.ol-foreground
+{
+    background-color: #f6f6f6;
+    border: solid 1px #cccccc;
+    padding: 5px !important;
+}
+
+ul.nbill-main-menu-logged-in {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+ul.nbill-main-menu-logged-in li {
+    list-style: none;
+    border-bottom: solid 1px #ccc;
+    padding: 5px 3px 5px 3px;
+}
+table {
+    border-collapse: collapse;
+}
+td.field-title {
+    vertical-align:top;
+    max-width:350px;
+    width:350px;
+}
+tr.jlist-table th {
+    background-color: #666;
+    color: #fff;
+    border: solid 1px #ccc;
+}
+tr.cat-list-row1 td, tr.cat-list-row2 td {
+    border: solid 1px #ccc;
+}
+tr.cat-list-row2 td {
+    background-color: #eee;
+}
+td.nbill-cancel-order-submit input {
+    white-space:nowrap;
+}
+
+/******** Responsive tables ************/
+th.responsive-cell,
+td.responsive-cell {
+    display: table-cell;
+}
+span.responsive-cell {
+    display: inline;
+}
+
+@media screen and (max-width: 799px) {
+   th.responsive-cell.optional,
+   td.responsive-cell.optional,
+   span.responsive-cell.optional {
+      display: none;
+   }
+   th.responsive-cell.low-priority,
+   td.responsive-cell.low-priority,
+   th.responsive-cell.medium-priority,
+   td.responsive-cell.medium-priority,
+   th.responsive-cell.high-priority,
+   td.responsive-cell.high-priority {
+       display: table-cell;
+   }
+   span.responsive-cell.low-priority,
+   span.responsive-cell.medium-priority,
+   span.responsive-cell.high-priority {
+       display: inline;
+   }
+}
+
+@media screen and (max-width: 639px) {
+    th.responsive-cell.optional,
+    td.responsive-cell.optional,
+    span.responsive-cell.optional,
+    th.responsive-cell.low-priority,
+    td.responsive-cell.low-priority,
+    span.responsive-cell.low-priority {
+        display: none;
+    }
+
+    th.responsive-cell.medium-priority,
+    td.responsive-cell.medium-priority,
+    th.responsive-cell.high-priority,
+    td.responsive-cell.high-priority {
+        display: table-cell;
+    }
+
+    span.responsive-cell.medium-priority,
+    span.responsive-cell.high-priority {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    th.responsive-cell.optional,
+    td.responsive-cell.optional,
+    span.responsive-cell.optional,
+    th.responsive-cell.low-priority,
+    td.responsive-cell.low-priority,
+    span.responsive-cell.low-priority,
+    th.responsive-cell.medium-priority,
+    td.responsive-cell.medium-priority,
+    span.responsive-cell.medium-priority {
+        display: none;
+    }
+
+    th.responsive-cell.high-priority,
+    td.responsive-cell.high-priority {
+        display: table-cell;
+    }
+    span.responsive-cell.high-priority {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 321px) {
+   th.responsive-cell.optional,
+   td.responsive-cell.optional,
+   span.responsive-cell.optional,
+   th.responsive-cell.low-priority,
+   td.responsive-cell.low-priority,
+   span.responsive-cell.low-priority,
+   th.responsive-cell.medium-priority,
+   td.responsive-cell.medium-priority,
+   span.responsive-cell.medium-priority,
+   th.responsive-cell.high-priority,
+   td.responsive-cell.high-priority,
+   span.responsive-cell.high-priority {
+      display: none;
+   }
+
+   .nbill-login-box-inner
+    {
+        margin-left: 0;
+    }
+
+    #contentarea, #contentarea2
+    {
+        padding-left:5px !important;
+        padding-right:5px !important;
+    }
+}
+/****** Responsive tables end **********/

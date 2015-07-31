@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>payment_gateway_config</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="gateway_id">
+			<type>varchar</type>
+			<length>50</length>
+			<null>NOT NULL</null>
+            <allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="display_name">
+			<type>varchar</type>
+			<length>255</length>
+			<null>NOT NULL</null>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+        <column name="voucher_code">
+            <type>varchar</type>
+            <length>100</length>
+            <null>NOT NULL</null>
+            <default></default>
+            <description></description>
+        </column>
+		<column name="published">
+			<type>tinyint</type>
+			<length>1</length>
+			<null>NOT NULL</null>
+			<description></description>
+		</column>
+        <column name="ordering">
+            <type>int</type>
+            <length>11</length>
+            <null>NOT NULL</null>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>gateway_id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

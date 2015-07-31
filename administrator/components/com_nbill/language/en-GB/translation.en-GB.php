@@ -1,0 +1,20 @@
+<?php
+define("NBILL_TRANSLATION_TITLE", "Translation");
+define("NBILL_TRANSLATION_INTRO", "You can use this feature to provide translations of nBill content into different languages. Any text that is output from nBill itself should be translated in a language file, but text you supply yourself (for example, captions on your order forms), can be translated here. NOTE: This feature will NOT work in older versions of Joomla or Mambo (for which you can use Joom!Fish or Nokkaew). The following list represents the places administrator-supplied content is stored in the database. It is possible to add further tables to this list by creating a new XML file in the nBill administrator translations folder.");
+define("NBILL_TRANSLATION_TABLE", "Content Table");
+define("NBILL_TRANSLATION_DESCRIPTION", "Table Description");
+define("NBILL_TRANSLATION_EDIT_TABLE", "Edit translations for this database table");
+define("NBILL_TRANSLATION_EDIT_TABLE_TITLE", "Translate rows in table '%s'");
+define("NBILL_TRANSLATION_EDIT_TABLE_INTRO", "Please select a record to translate from the following list.");
+define("NBILL_TRANSLATION_NO_TITLE", "[Untitled]");
+define("NBILL_TRANSLATION_EDIT_ROW", "Translate the content for this row");
+define("NBILL_EDIT_TRANSLATION", "Edit Translation");
+define("NBILL_TRANSLATION_SELECT_LANG", "Select Target Language");
+define("NBILL_TRANSLATION_COLUMN", "Column");
+define("NBILL_TRANSLATION_SOURCE", "Source Content");
+define("NBILL_TRANSLATION_TARGET", "Target Translation");
+define("NBILL_TRANSLATION_PUBLISHED", "Published?");
+define("NBILL_TRANSLATION_COPY", "Copy -&gt;");
+define("NBILL_TRANSLATION_OVERWRITE", "Are you sure you want to overwrite the current translation of `%s` with the original text?");
+define("NBILL_TRANSLATION_PUBLISHED_YES", "Published");
+define("NBILL_TRANSLATION_PUBLISHED_NO", "Not Published");

@@ -1,0 +1,50 @@
+table.collapsible
+{
+    padding:0px;
+}
+table.collapsible th, table.collapsible td,
+table.adminform table.collapsible th, table.adminform table.collapsible td,
+table.adminlist table.collapsible th, table.adminlist table.collapsible td
+{
+    height:22px !important;
+    border:0px !important;
+    padding:0px !important;
+    margin:0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    background-image: none !important;
+    background-color: #fff !important;
+    color: #333333 !important;
+}
+
+td.right
+{
+    text-align:right !important;
+}
+th.print
+{
+    background-image:none !important;
+    background-color:#dedede !important;
+}
+tr.collapse-parent td
+{
+    background-color: #f3f3f3 !important;
+}
+#anomaly_criteria td, #anomaly_criteria th
+{
+    background-color: #f3f3f3 !important;
+    border: solid 1px #dddddd !important;
+}
+.expander-icon
+{
+    width:13px;
+    vertical-align:middle;
+}
+.expanded-branch
+{
+    width:32px;
+    vertical-align:middle;
+    border:none;
+    padding:0;
+    margin:0;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>nBill: Shipping Rates</name>
+  <author>Netshine Software Limited</author>
+  <version>2.0.2</version>
+  <description>nBill: Shipping Service Descriptions</description>
+  <reference>
+  	<table name="nbill_shipping">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="service" translate="1">Shipping Service</field>
+  	</table>
+  </reference>
+</joomfish>

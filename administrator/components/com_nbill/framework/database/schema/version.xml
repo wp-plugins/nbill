@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>version</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="software_version">
+			<type>varchar</type>
+			<length>20</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="service_pack">
+			<type>int</type>
+			<length>11</length>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="upgraded_from">
+		  <type>varchar</type>
+		  <length>20</length>
+		  <null>NULL</null>
+		  <allow_html>false</allow_html>
+		  <encode_html>false</encode_html>
+		  <description>Previous version number which was upgraded to this version</description>
+    </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+</table>

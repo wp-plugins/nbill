@@ -1,0 +1,386 @@
+/*
+* This stylesheet is used in the back-end form editor only
+*/
+html, body
+{
+	margin: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+}
+h3
+{
+	margin: 3px;
+}
+#nbill_editor_html, #nbill_editor_body
+{
+	height:900px;
+	width:99.5% !important;
+}
+label
+{
+	margin: 0px;
+}
+#nbill_editor_container
+{
+	position:absolute;
+	left:0px;
+	right:0px;
+	height:850px;
+	width:100%;
+	margin-top: 5px;
+}
+#nbill_left_pane
+{
+	position:absolute;
+	left:0px;
+	border: solid 1px #cccccc;
+	border-right: 0px;
+	height:100%;
+}
+#nbill_left_pane_header, #nbill_right_pane_header
+{
+	padding-left:5px;
+	background-color:#e1e1e1;
+	border-bottom:solid 1px #cccccc;
+	margin-top: 0px;
+	top: 0px;
+	text-align: left;
+}
+#nbill_left_pane_header
+{
+	height: 54px;
+}
+#nbill_right_pane_header
+{
+	height: 54px;
+	margin-bottom: 5px;
+}
+.nbill_editor_heading
+{
+	font-size: 120%;
+	font-weight: bold;
+}
+#nbill_right_pane_content
+{
+	height: 700px;
+}
+#nbill_left_pane_content
+{
+	position: relative;
+	height: 785px;
+	border:solid 2px #999999;
+	border-right:solid 2px #cccccc;
+	border-bottom:solid 2px #cccccc;
+	margin: 0px;
+	padding: 3px;
+}
+.nbill_left_pane_page
+{
+	position: relative;
+	height:700px;
+    min-width: 700px;
+    background-image: url('editor_background.png');
+    background-repeat: repeat;
+}
+.nbill_label, .nbill_value, .nbill_field, .nbill_control
+{
+	cursor:pointer;
+}
+.nbill_label
+{
+	width:200px;
+	float:left;
+	padding-top: 3px;
+}
+.nbill_confirm_label
+{
+	clear:left;
+	margin-top: 3px;
+}
+.nbill_value
+{
+	float: left;
+}
+.nbill_confirm_value
+{
+	margin-top: 3px;
+}
+.nbill_field
+{
+	position:absolute;
+    border: solid 2px transparent;
+}
+.nbill_field_highlight
+{
+	position:absolute;
+	cursor:pointer;
+	border: solid 2px #009900;
+	overflow:hidden;
+}
+#nbill_splitter
+{
+	position:absolute;
+	height:100%;
+	border-top: solid 1px #bbbbbb;
+	border-bottom: solid 1px #bbbbbb;
+	background-color: #bbbbbb;
+	cursor: e-resize; /* For Safari/Chrome */
+	cursor: col-resize;
+}
+#nbill_right_pane
+{
+	position:absolute;
+	top:0px;
+	height:100%;
+	background-color:#e1e1e1;
+	border:solid 1px #cccccc;
+	overflow: auto;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#nbill_right_pane td, #nbill_right_pane td input, #nbill_right_pane td select, #nbill_right_pane td textarea
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#nbill_right_pane_content
+{
+	font-size: 12px;
+}
+#nbill_field_list
+{
+	margin-top: 7px;
+	margin-bottom: 3px;
+	white-space: nowrap;
+	float:left;
+}
+#nbill_form_field_list
+{
+	font-size: 0.95em;
+	width: 150px;
+}
+.nbill_property_table
+{
+	border-collapse: collapse;
+	width: 98%;
+	margin:3px;
+	background-color: #eeeeee;
+}
+.nbill_property_table td
+{
+	/*font-size: 0.7em !important;*/
+	border: solid 1px #cccccc;
+	background-color: #eeeeee;
+	padding: 2px;
+	white-space: nowrap;
+}
+#nbill_property_splitter
+{
+	position:absolute;
+	height:100%;
+	border-top: solid 1px #bbbbbb;
+	border-bottom: solid 1px #bbbbbb;
+	background-color: #bbbbbb;
+	cursor: e-resize; /* For Safari/Chrome */
+	cursor: col-resize;
+}
+#nbill_canvas_controls, #nbill_page_actions
+{
+	position:absolute;
+	left: 0px;
+	padding-left: 5px;
+	height: 25px;
+	font-size:0.85em;
+	overflow: hidden;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	white-space: nowrap;
+}
+#nbill_canvas_controls
+{
+	top: 0px;
+}
+#nbill_page_actions
+{
+	top: 26px;
+	border-top: solid 1px #cccccc;
+	padding-top: 5px;
+	width: 100%;
+	background-color:#ddffdd;
+}
+#btn_add_new_field, #btn_delete_fields
+{
+	font-size: 0.95em;
+	border: solid 1px #666666;
+	background-color: #dddddd;
+	font-weight:bold;
+	color: #333333;
+}
+#nbill_canvas_controls input, #nbill_canvas_controls select, #nbill_page_properties input, #nbill_page_properties select
+{
+	font-size:0.95em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#nbill_properties_tab, #nbill_page_properties
+{
+	position:relative;
+	top:2px;
+}
+.nbill-properties-hidden-tab
+{
+	text-decoration: none;
+	background-color:#cccccc;
+	color:#000000;
+	padding:2px;
+	border:solid 1px #cccccc;
+	border-bottom:none;
+	margin-left:2px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+.nbill-properties-active-tab
+{
+	text-decoration: none;
+	background-color:#ffffff;
+	color:#000000;
+	padding:2px;
+	border:solid 1px #cccccc;
+	border-bottom:none;
+	margin-left:2px;
+	margin-top:2px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+#nbill_field_options_container
+{
+	padding: 5px;
+}
+.nbill-admin-form
+{
+	border-collapse: collapse;
+}
+.nbill-admin-form td, .nbill-admin-form th
+{
+	border: solid 1px #cccccc;
+	background-color: #eeeeee;
+	/*font-size: 75%;*/
+}
+.nbill-admin-form input, .nbill-admin-form select
+{
+	font-size: 90%;
+}
+tr.nbill_new_option td
+{
+	background-color: #ccffcc;
+}
+tr.nbill_option_spacer td, tr.nbill_option_actions td
+{
+	background-color:#ffffff;
+	border: none;
+}
+#page_properties_header
+{
+    width:100%;
+    height:18px;
+}
+#page_properties_title
+{
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 1.2em !important;
+    width:100%;
+}
+#page_move_buttons, #field_move_buttons
+{
+    white-space: nowrap;
+}
+#page_move_buttons a, #field_move_buttons a
+{
+    margin-left:5px;
+}
+.nbill_page_intro_title
+{
+	border:solid 1px #aaaaaa;
+	height:17px;
+	color: #666666;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+.nbill_page_intro_content
+{
+	border:solid 1px #aaaaaa;
+	border-top:none;
+	padding: 3px;
+}
+.nbill-login-box-outer
+{
+    width: 380px;
+}
+.nbill-login-box-inner
+{
+    width: 260px;
+    margin-left:auto;
+    margin-right:auto;
+    /*white-space: nowrap;*/
+}
+.nbill_control
+{
+	width: 180px;
+    /*float: left; /* To stop IE adding a top and bottom margin */
+}
+.nbill_hidden_field
+{
+    background-image: url('hidden.png');
+    background-repeat: repeat;
+}
+.nbill_checkbox
+{
+	margin-bottom: auto;
+	margin-top: auto;
+	width:15px !important;
+	height:15px;
+	vertical-align: middle;
+    margin-left:0px;
+}
+.nbill_radio
+{
+	width: 15px !important;
+	height: 18px;
+	margin-bottom: auto;
+	margin-top: auto;
+	margin-right: 3px;
+	margin-left: 0px;
+	vertical-align: middle;
+}
+.nbill_radio_vertical
+{
+	height: 18px;
+}
+.nbill_summary_table
+{
+    width: auto;
+    min-width: 300px;
+    border-collapse: collapse;
+}
+.nbill_summary_table th, .nbill_summary_table td
+{
+    border: solid 1px #cccccc;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    line-height: 1.2;
+    height:25px;
+    vertical-align: middle;
+}
+.nbill_summary_amount_value
+{
+    white-space: nowrap;
+    text-align: right;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>eu_tax_rate_info</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="country_code">
+			<type>char</type>
+			<length>2</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="tax_name">
+			<type>varchar</type>
+			<length>150</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="tax_abbreviation">
+			<type>varchar</type>
+			<length>10</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="tax_reference_desc">
+			<type>varchar</type>
+			<length>100</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="tax_rate">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>country_code</name>
+            </column>
+        </columns>
+    </primary>
+</table>

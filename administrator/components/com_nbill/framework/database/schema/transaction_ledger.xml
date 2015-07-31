@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>transaction_ledger</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<extra>auto_increment</extra>
+			<description></description>
+		</column>
+		<column name="vendor_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="transaction_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="nominal_ledger_code">
+			<type>varchar</type>
+			<length>20</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="currency">
+			<type>char</type>
+			<length>3</length>
+			<null>NOT NULL</null>
+			<default></default>
+			<allow_html>false</allow_html>
+			<encode_html>false</encode_html>
+			<description></description>
+		</column>
+		<column name="net_amount">
+			<type>decimal</type>
+            <length>20,6</length>
+			<null>NOT NULL</null>
+			<default>0.00</default>
+			<description></description>
+		</column>
+        <column name="tax_rate">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="tax_amount">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+        <column name="gross_amount">
+            <type>decimal</type>
+            <length>20,6</length>
+            <null>NOT NULL</null>
+            <default>0.00</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>id</name>
+            </column>
+        </columns>
+    </primary>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>transaction_id</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>nominal_ledger_code</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+    <index>
+        <type>multiple</type>
+        <columns>
+            <column>
+                <name>currency</name>
+            </column>
+        </columns>
+        <description></description>
+    </index>
+</table>

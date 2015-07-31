@@ -1,0 +1,55 @@
+/**
+* This file provides an example of how you can change the look and feel of your administrator by
+* simply creating a new stylesheet and overriding whatever you want to change. To implement a green colour
+* scheme, just rename this file to 'template.css' (ie. remove the leading underscore).
+*/
+
+/** Home Page **/
+.main-dashboard-text, .nbill-help-link a, h1, h2, h3, h4, h5, h6
+{
+    color: #6594C2;
+}
+.nbill-widget-title
+{
+    background-color:#6594C2;
+}
+
+.nbill-widget-coloured-link:hover
+{
+    background-color: #9ecce5;
+}
+.nbill-widget-div-link
+{
+    border: solid 1px #8AC1E0;
+}
+.nbill-widget-div-link a
+{
+    color: #3D6C97;
+}
+
+/** General **/
+table.adminform th, table.adminlist th
+{
+    background-color: #6594C2 !important;
+    color: #fff !important;
+}
+table.summary-list tr:hover, table.adminlist tr:hover
+{
+    background-color: #dfdfff;
+}
+table.adminlist tr.selected
+{
+    background-color: #ccccff;
+}
+a, .nbill-menu-list li a
+{
+    color: #3D6C97;
+}
+table.adminform th a, table.adminlist th a
+{
+    color:#ddf;
+}
+.nbill-static-help-text
+{
+    background-color: #dfdfff;
+}

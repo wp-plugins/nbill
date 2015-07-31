@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+	<name>orders_document</name>
+	<collation>utf8_general_ci</collation>
+	<description></description>
+	<columns>
+		<column name="order_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="document_item_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+		<column name="document_id">
+			<type>int</type>
+			<length>11</length>
+			<signed>UNSIGNED</signed>
+			<null>NOT NULL</null>
+			<default>0</default>
+			<description></description>
+		</column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>order_id</name>
+				</column>
+				<column>
+					<name>document_item_id</name>
+            </column>
+        </columns>
+    </primary>
+		<index>
+			<type>multiple</type>
+			<columns>
+				<column>
+					<name>document_id</name>
+				</column>
+			</columns>
+			<description></description>
+		</index>
+</table>

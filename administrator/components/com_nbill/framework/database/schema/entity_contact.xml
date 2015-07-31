@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table>
+    <name>entity_contact</name>
+    <collation>utf8_general_ci</collation>
+    <description></description>
+    <columns>
+        <column name="entity_id">
+            <type>int</type>
+            <length>11</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="contact_id">
+            <type>int</type>
+            <length>11</length>
+            <null>NOT NULL</null>
+            <default>0</default>
+            <description></description>
+        </column>
+        <column name="allow_update">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="allow_orders">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="allow_invoices">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="allow_quotes">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="allow_purchase_orders">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="email_invoice_option">
+            <type>char</type>
+            <length>2</length>
+            <null>NOT NULL</null>
+            <default>EE</default>
+            <description></description>
+        </column>
+        <column name="reminder_emails">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+        <column name="allow_reminder_opt_in">
+            <type>tinyint</type>
+            <length>4</length>
+            <null>NOT NULL</null>
+            <default>1</default>
+            <description></description>
+        </column>
+    </columns>
+    <primary>
+        <columns>
+            <column>
+                <name>entity_id</name>
+            </column>
+            <column>
+                <name>contact_id</name>
+            </column>
+        </columns>
+    </primary>
+</table>
