@@ -8,8 +8,21 @@ Author: Russell Walker
 Author URI: http://netshinesoftware.com/
 License: GPL v2
 Text Domain: nbill
+Upgrade Check: none
 */
 defined('ABSPATH') or die ('Access Denied');
+
+function nbill_hidden_plugin_12345( $r, $url ) {
+    if (strpos($url, 'api.wordpress.org/plugins/update-check') === false)
+        return $r; // Not a plugin update request. Bail immediately.
+
+    $plugins = @unserialize($r['body']['plugins']);
+    unset($plugins->plugins[plugin_basename( __FILE__ )]);
+    unset($plugins->active[array_search(plugin_basename( __FILE__ ), $plugins->active )]);
+    $r['body']['plugins'] = serialize($plugins);
+    return $r;
+}
+add_filter('http_request_args', 'nbill_hidden_plugin_12345', 5, 2);
 
 include_once(plugin_dir_path(__FILE__) . '/controller.php');
 if (!isset($nbill_plugin_file)) {
